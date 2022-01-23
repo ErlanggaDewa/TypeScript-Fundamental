@@ -18,6 +18,7 @@ class Admin extends User {
   write: boolean = false;
   phone: string;
   private _email: string = "default@gmail.com";
+  static getRoleName: string = "Admin";
 
   constructor(name: string, age: number, phone: string) {
     super(name, age);
@@ -47,3 +48,5 @@ console.log(admin.age);
 console.log(admin.phone);
 console.log((admin.email = "cek"));
 console.log(admin.getRole());
+
+console.log(Admin.getRoleName);
